@@ -1,0 +1,47 @@
+.final{
+    background: #000000;
+}
+
+.final-container{
+    max-width: 1200px;
+    padding: 120px 60px;
+    margin: 0 auto;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.final-texto{
+    font-size: 1.5rem ;
+    line-height: 1.33;
+    color: #cccccc;
+}
+
+.final-contato li{
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: #fff ;
+    margin-bottom: 30px;
+}
+
+.final-contato li a{
+    color: #fff;
+}
+
+.final-copy{
+    grid-column: 1 / -1;
+    font-size: 1.25rem;
+    color: #8f8f8f;
+}
+
+@media (max-width: 800px){
+    .final-container{
+        grid-template-columns: 1fr;
+    }
+
+    .final-contato li{
+        font-size: 1.5rem;
+    }
+}
